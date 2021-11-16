@@ -56,8 +56,8 @@ const randomProductList = (categoryList, numberOfProducts) => {
 //IFFE
 (() => {
     //Random data
-    const categoryList = randomCategoryList(4);
-    const productList = randomProductList(categoryList, 5);
+    const categoryList = randomCategoryList(5);
+    const productList = randomProductList(categoryList, 20);
 
     //prepare db object
     const db = {
