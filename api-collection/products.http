@@ -21,7 +21,7 @@ GET {{baseUrl}}/{{resourceName}}?name_like=fan
 ###
 
 # @name pagination
-GET {{baseUrl}}/{{resourceName}}?_page=1&_limit=5
+GET {{baseUrl}}/{{resourceName}}?_page=1&_limit=3
 
 ###
 
@@ -36,17 +36,24 @@ POST {{baseUrl}}/{{resourceName}}
 Content-Type: application/json
 
 {
-    "name": "Keyboard 2"
+    
+    "categoryId": "7fcd39a3-bc42-4ff5-9f19-c2b2bdfae892",
+    "name": "Gorgeous Granite Table",
+    "color": "olive",
+    "price": 400,
+    "thumnailUrl": "http://placeimg.com/300/300"
 }
 
 ###
 
 # @name update
-PATCH {{baseUrl}}/{{resourceName}}/5
+PATCH {{baseUrl}}/{{resourceName}}/kVByyeI
 Content-Type: application/json
 
 {
-    "name": "New Keyboard"
+    "name": "Gorgeous Granite Table",
+    "color": "RED",
+    "price": 500
 }
 
 ###
