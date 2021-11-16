@@ -1,0 +1,34 @@
+
+@baseUrl = http://localhost:3000/api
+@resouceName=categories
+
+#Categories
+
+# @name getAll
+GET {{baseUrl}}/{{resouceName}}
+
+###
+
+# @name addNew
+POST {{baseUrl}}/{{resouceName}}
+Content-Type: application/json
+
+{
+    "name": "Keyboard 2"
+}
+
+###
+
+# @name update
+PATCH {{baseUrl}}/{{resouceName}}/5
+Content-Type: application/json
+
+{
+    "name": "New Keyboard"
+}
+
+###
+
+# @name remove
+DELETE {{baseUrl}}/{{resouceName}}/5
+
