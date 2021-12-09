@@ -41,7 +41,7 @@ const randomProductList = (categoryList, numberOfProducts) => {
                 createdAt: Date.now(),
                 updatedAt: Date.now(),
                 // thumnailUrl: faker.image.imageUrl(300, 300)
-                thumnailUrl: faker.commerce.thumnailUrl(300, 300)
+                thumnailUrl: faker.image.food(300, 300)
 
             }
 
